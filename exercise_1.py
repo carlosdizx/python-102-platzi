@@ -73,7 +73,6 @@ comun_estudiantes_y_profesores_not_estudiantes_y_administrativos = (estudiantes.
 print("¿Cuántos géneros musicales son comunes entre estudiantes y profesores, pero no entre estudiantes y "
       "administrativos?", len(comun_estudiantes_y_profesores_not_estudiantes_y_administrativos))
 
-
 # Diagrame su respuesta
 
 venn3([administrativos, profesores, estudiantes],
@@ -83,6 +82,7 @@ plt.gcf().set_size_inches(10, 10)
 plt.show()
 
 venn_diagram = venn3([administrativos, profesores, estudiantes],
+                     set_colors=("#FF5733", "#33FF57", "#5733FF"),
                      set_labels=('Administrativos', 'Profesores', 'Estudiantes'), alpha=0.7)
 
 # Agregar etiquetas a las áreas de intersección
