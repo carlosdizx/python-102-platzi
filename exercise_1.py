@@ -82,8 +82,8 @@ plt.gcf().set_size_inches(10, 10)
 plt.show()
 
 venn_diagram = venn3([administrativos, profesores, estudiantes],
-                     set_colors=("#FF5733", "#33FF57", "#5733FF"),
-                     set_labels=('Administrativos', 'Profesores', 'Estudiantes'), alpha=0.7)
+                     set_colors=("#004469", "#5cd278", "#d9b783"),
+                     set_labels=('Administrativos', 'Profesores', 'Estudiantes'), alpha=0.8)
 
 # Agregar etiquetas a las áreas de intersección
 venn_diagram.get_label_by_id('100').set_text('\n'.join(administrativos - (profesores | estudiantes)))
